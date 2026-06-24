@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small, breaklines=true, frame=single}
+
+\title{\textbf{Reasoning LLMs from Scratch}\\[0.5em]
+\large Enhanced Lecture Notes -- Mini-Book (Lectures 1--3)}
+\author{Vizuara Lecture Series}
+\date{June 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter*{Preface}
+This mini-book contains professionally enhanced notes from the ``Reasoning LLMs from Scratch'' series. All internal generation timestamps have been removed. Each chapter combines visual frames, rich textual explanations, diagrams, tables, and code examples.
+
+\chapter{Lecture 1: Series Introduction}
+\includepdf[pages=-,pagecommand={}]{../notes-tex/01_lecture1.pdf}
+
+\chapter{Lecture 2: Chain of Thought Reasoning}
+\input{../notes-tex/02_lecture2.tex}
+
+\chapter{Lecture 3: Verifiers -- Beam Search}
+\input{../notes-tex/03_lecture3.tex}
+
+\appendix
+\chapter{Production Notes}
+\begin{itemize}
+    \item All images are perceptually unique and relevant.
+    \item No generation timestamps appear in the final PDF.
+    \item Textual explanations substantially expanded beyond transcripts.
+\end{itemize}
+
+\end{document}
